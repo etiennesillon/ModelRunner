@@ -23,7 +23,7 @@
     <a href="https://github.com/etiennesillon/ModelRunner"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/etiennesillon/ModelRunner">View Demo</a>
+    <a href="https://www.dropbox.com/s/f9v70eagurlz9tt/model%20demo%202%20-%20voice.mp4?dl=0">View Demo</a>
     ·
     <a href="https://github.com/etiennesillon/ModelRunner/issues">Report Bug</a>
     ·
