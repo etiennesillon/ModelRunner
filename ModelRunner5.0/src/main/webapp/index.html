@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Your Data</title>
+        <style>
+            input {
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            button {
+                background-color: #2c302d;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Model Runner - Application Login ... </h1>
+        </div>
+
+        <form name="input" action="IDCWebAppController?action=0" method="post">
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="appl"><b>Application</b></label>
+                    <td>
+                        <input type="text" placeholder="Enter Application name" name="appl" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="userid"><b>Username</b></label>
+                    <td>
+                        <input type="text" placeholder="Enter Username" name="userid" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passwd"><b>Password</b></label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Enter Password" name="passwd" required>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+    </body>
+
+    </html>

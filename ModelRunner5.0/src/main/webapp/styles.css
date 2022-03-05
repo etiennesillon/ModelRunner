@@ -1,0 +1,509 @@
+/* All elements */
+
+* {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+td {
+  white-space: nowrap;
+  padding:0 15px;
+}
+
+th {
+  white-space: nowrap;
+  padding:0 15px;
+}
+
+.apptitle {
+  margin: 0;
+  padding: 0;
+  float: right;
+  font-size: 30px;
+}
+
+.dot {
+  font-size: 12px;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(219, 66, 66);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+/* Menu Bar */
+
+.menubar {
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #464039;
+}
+
+.menubar-right {
+  float: right;
+}
+
+.menubar li {
+  float: left;
+}
+
+.menubar input {
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 3px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #91887f;
+  opacity: 1; /* Firefox */
+}
+
+.menubar img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.menubar button {
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.menubar li button {
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.menubar li a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.menubar li button:hover {
+  background-color: #252424;
+}
+
+.menubar li button[disabled=disabled], button:disabled {
+  color: rgb(90, 90, 107);
+}
+
+/* Content Panel */
+
+.datapane * {
+  font-size: 18px;
+}
+
+.pagetitle {
+  font-size: 25px;
+  padding: 0;
+  margin: 5px;
+}
+
+.linkbut {
+  font-size: 18px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.updlinkbut {
+  font-size: 18px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.datapane th {
+  text-align: left;
+}
+
+.datapane textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.browse_table {
+  width: 100%;
+}
+
+/* Actions bar */
+
+.actionsbar {
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.actionsbar li {
+  float: right;
+}
+
+.actionsbar button {
+  display: block;
+  color: white;
+  font-size: 15px;
+  background-color: #464039;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 5px 0px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.actionsbar li button:hover {
+  background-color: #252424;
+}
+
+.actionsbar li button[disabled=disabled], button:disabled {
+  color: rgb(90, 90, 107);
+}
+
+/* Item details buttons */
+
+.detailsbutpanel {
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.detailsbutpanel li {
+  float: left;
+}
+
+.detailsbutpanel button {
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.detailsbutpanel li button:hover {
+  background-color: #252424;
+}
+
+.detailsbutpanel li button[disabled=disabled], button:disabled {
+  color: rgb(90, 90, 107);
+}
+
+/* List page buttons */
+
+.listbutpanel {
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.listbutpanel li {
+  float: left;
+}
+
+.listbutpanel button {
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.listbutpanel li button:hover {
+  background-color: #252424;
+}
+
+.listbutpanel li button[disabled=disabled], button:disabled {
+  color: rgb(90, 90, 107);
+}
+
+/* List Attributes buttons */
+
+.insidelistbutpanel {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.insidelistbutpanel li {
+  float: left;
+}
+
+.insidelistbutpanel button {
+  display: block;
+  color: white;
+  font-size: 12px;
+  background-color: #464039;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.insidelistbutpanel li button:hover {
+  background-color: #252424;
+}
+
+.insidelistbutpanel li button[disabled=disabled], button:disabled {
+  color: rgb(90, 90, 107);
+}
+
+/* Todo */
+
+.todo {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #464039; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+/* Explorer */
+
+.explorer {
+  height: 100%; 
+  width: 250px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #464039; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.explorer * {
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.explorer button {
+  background-color: #464039; 
+  border: none;
+  padding: 0 !important;
+  text-decoration: underline;
+}
+
+.explorer *:hover {
+  color: #f1f1f1;
+}
+
+.explorer .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  background-color: #464039;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s; 
+  margin-Left: 250px;
+  padding: 0px 0px 0px 0px;
+}
+
+#editor {
+  transition: margin-left .5s; 
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .explorer {padding-top: 15px;}
+  .explorer a {font-size: 18px;}
+}  
+
+.caret {
+  user-select: none;
+  cursor: pointer;
+}
+
+.caret::before {
+  content: "\25B6";
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+  cursor: pointer;
+}
+
+.active button {
+  cursor: pointer;
+}
+
+/* Canvas */
+
+.canvasParent {
+  background-color: white;
+  height: 100%; 
+  width: 100%; 
+}
+
+.canvas {
+  z-index: 1;  
+}
+
+/* Popup Panel */
+
+.popuppanel {
+  background-color: #ffffff;
+  display: none;
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  z-index: 11;  
+}
+
+.popuppanel--active {
+  display: block;
+}
+
+.popuppanel button {
+  color: white;
+  font-size: 18px;
+  background-color: #464039;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+}
+
+.popuppanel button:hover {
+  background-color: #252424;
+}
+
+/* Dropdown checklist */
+
+.dropdown-check-list {
+  display: inline-block;
+}
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
