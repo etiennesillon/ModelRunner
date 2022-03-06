@@ -221,7 +221,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [contributors-shield]: https://img.shields.io/github/contributors/EtienneSillon/ModelRunner
 [contributors-url]: https://github.com/etiennesillon/ModelRunner/graphs/contributors
 
-[stars-shield]: https://img.shields.io/github/stars/etiennesillon/ModelRunner
+[stars-shield]: https://img.shields.io/github/stars/etiennesillon/modelrunner?style=for-the-badge
 [stars-url]: https://github.com/etiennesillon/ModelRunner/network/stargazers
 
 [forks-shield]: https://img.shields.io/github/stars/etiennesillon/modelrunner
@@ -235,4 +235,6 @@ Use this space to list resources you find helpful and would like to give credit 
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin
 [linkedin-url]: https://www.linkedin.com/in/etienne-sillon-4090aa6/
+
+
 [product-screenshot]: images/screenshot.png
