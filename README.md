@@ -14,8 +14,9 @@
 
 <div align="center">
 
-  <h1 align="center">Model Runner - a Semantic Information Management Platform</h1>
-  
+  <h1 align="center">Model Runner</h1>
+  <h1 align="center">Semantic Information Management Platform</h1>  
+
   <a href="https://github.com/etiennesillon/ModelRunner">
     <img src="images/logo.png" alt="Logo">
   </a>
@@ -110,11 +111,11 @@
 
 <h3 id="database-properties">Update runtime.properties</h3>
 
-  <p>Update runtime.properties to reflect your database, driver, URL etc</p>
+  <p>Update <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/runtime.properties">runtime.properties</a> to reflect your database, driver, URL etc</p>
 
 <h3 id="database-schema">Create admin schema</h3>
 
-  <p>The default admin schema name is $$Admin but you can change that in runtime.properties. You will need to create the schema manually before continuing, I use MySQLWorkbench for this.</p>
+  <p>The default admin schema name is $$Admin but you can change that in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/runtime.properties">runtime.properties</a>. You will need to create the schema manually before continuing, I use MySQLWorkbench for this.</p>
 
 <h3 id="database-init">Populate system tables in the admin schema</h3>
 
@@ -122,7 +123,7 @@
 
 <p>Everything related to database management and data access is in the <a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database">database package</a>. Start with <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> which contains the code to setup the database.</p>
 
-<p>Just run the Init function specifying the properties file, the MetaModel file and the Admin application model:</p>
+<p>Just run the Init function in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> specifying the properties file, the MetaModel file and the Admin application model:</p>
 
 <p>Java IDCDBManager Init runtime.properties MetaModel.xml ModelAdmin.xml</p>
 
