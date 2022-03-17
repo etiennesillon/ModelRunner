@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaModel name="Generic - Model Driven Data Management System">
+
+ <Common_Attributes>
+   <Common_Attribute name="name" type="Attribute"/>
+   <Common_Attribute name="displayName" type="Attribute"/>
+   <Common_Attribute name="isEnabled" type="Attribute" default="true"/>
+   <Common_Attribute name="isViewable" type="Attribute" default="true"/>
+   <Common_Attribute name="treeIcon" type="Attribute"/>
+   <Common_Attribute name="panelIcon" type="Attribute"/>
+   <Common_Attribute name="description" type="Attribute"/>
+   <Common_Attribute name="contactDetails" type="Attribute"/>
+   <Common_Attribute name="maxTestObjects" type="Attribute"/>
+   <Common_Attribute name="concepts" type="Attribute"/>
+   <Common_Attribute name="Actions" type="Child" childType="Action"/>
+ </Common_Attributes>
+
+ <Entities>
+
+   <Entity name="Application">
+    <Attributes>
+     <Attribute name="Packages" type="Child" childType="Package"/>
+     <Attribute name="Globals" type="Child" childType="GlobalVariable"/>
+     <Attribute name="ViewFolders" type="Child" childType="ViewFolder"/>
+     <Attribute name="ReportFolders" type="Child" childType="ReportFolder"/>
+     <Attribute name="DatabaseRef" type="Child" childType="DatabaseRef"/>
+     <Attribute name="homePage" type="Attribute"/>
+     <Attribute name="helpPage" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Package">
+    <Attributes>
+     <Attribute name="Types" type="Child" childType="Type"/>
+     <Attribute name="Domains" type="Child" childType="Domain"/>
+     <Attribute name="DatabaseRef" type="Child" childType="DatabaseRef"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Type">
+    <Attributes>
+     <Attribute name="isTopLevelViewable" type="Attribute" default="true"/>
+     <Attribute name="isTopLevelCreatable" type="Attribute" default="true"/>
+     <Attribute name="explorerSQLFilter" type="Attribute"/>
+     <Attribute name="explorerSQLOrderBy" type="Attribute"/>
+     <Attribute name="Panels" type="Child" childType="Panel"/>
+     <Attribute name="DatabaseRef" type="Child" childType="DatabaseRef"/>
+     <Attribute name="NameFormula" type="Attribute"/>
+     <Attribute name="isUniqueKey" type="Attribute" default="true"/>
+     <Attribute name="defaultListStylesheet" type="Attribute"/>
+     <Attribute name="defaultDetailsStylesheet" type="Attribute"/>
+     <Attribute name="defaultListPanel" type="Attribute"/>
+     <Attribute name="defaultDetailsPanel" type="Attribute"/>
+     <Attribute name="defaultEditDialog" type="Attribute"/>
+     <Attribute name="isDataEnabled" type="Attribute" default="true"/>
+     <Attribute name="extendsSystemType" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Panel">
+    <Attributes>
+     <Attribute name="Attributes" type="Child" childType="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Attribute">
+    <Attributes>
+     <Attribute name="desc" type="Attribute"/>
+     <Attribute name="type" type="Attribute"/>
+     <Attribute name="length" type="Attribute"/>
+     <Attribute name="isMandatory" type="Attribute" default="true"/>
+     <Attribute name="isKey" type="Attribute" default="true"/>
+     <Attribute name="isDisplayList" type="Attribute" default="true"/>
+     <Attribute name="isDisplayEdit" type="Attribute" default="true"/>
+     <Attribute name="isDisplaySearch" type="Attribute" default="true"/>
+     <Attribute name="initialValue" type="Attribute"/>
+     <Attribute name="formula" type="Attribute"/>
+     <Attribute name="refFormula" type="Attribute"/>
+     <Attribute name="refListFormula" type="Attribute"/>
+     <Attribute name="constraintFormula" type="Attribute"/>
+     <Attribute name="constraintMessage" type="Attribute"/>
+     <Attribute name="__Referenced_System_Type__" type="Attribute"/>
+     <Attribute name="References" type="Child" childType="Reference"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Reference">
+    <Attributes>
+     <Attribute name="xmi.idref" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Domain">
+    <Attributes>
+     <Attribute name="DomainValues" type="Child" childType="DomainValue"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="DomainValue">
+    <Attributes>
+     <Attribute name="key" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="GlobalVariable">
+    <Attributes>
+     <Attribute name="value" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Action">
+    <Attributes>
+     <Attribute name="isMetaAction" type="Attribute" default="false"/>
+     <Attribute name="isPreSave" type="Attribute" default="true"/>
+     <Attribute name="isUpload" type="Attribute" default="true"/>
+     <Attribute name="type" type="Attribute"/>
+     <Attribute name="formula" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="ViewFolder">
+    <Attributes>
+     <Attribute name="SubFolders" type="Child" childType="ViewFolder"/>
+     <Attribute name="Views" type="Child" childType="View"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="View">
+    <Attributes>
+     <Attribute name="source" type="Attribute"/>
+     <Attribute name="class" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="ReportFolder">
+    <Attributes>
+     <Attribute name="SubFolders" type="Child" childType="ReportFolder"/>
+     <Attribute name="Reports" type="Child" childType="Report"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="Report">
+    <Attributes>
+     <Attribute name="Type" type="Child" childType="Reference"/>
+     <Attribute name="source" type="Attribute"/>
+     <Attribute name="class" type="Attribute"/>
+     <Attribute name="stylesheet" type="Attribute"/>
+     <Attribute name="selectionFormula" type="Attribute"/>
+     <Attribute name="Fields" type="Child" childType="ReportField"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="ReportField">
+    <Attributes>
+     <Attribute name="formula" type="Attribute"/>
+     <Attribute name="header" type="Attribute"/>
+     <Attribute name="sortSequence" type="Attribute"/>
+     <Attribute name="isDescending" type="Attribute"/>
+     <Attribute name="isHidden" type="Attribute" default="false"/>
+     <Attribute name="type" type="Attribute"/>
+     <Attribute name="width" type="Attribute"/>
+    </Attributes>
+   </Entity>
+
+   <Entity name="DatabaseRef">
+    <Attributes>
+     <Attribute name="type" type="Attribute"/>
+     <Attribute name="url" type="Attribute"/>
+     <Attribute name="driver" type="Attribute"/>
+     <Attribute name="debug" type="Attribute" default="false"/>
+    </Attributes>
+   </Entity>
+
+ </Entities>
+
+</MetaModel>
