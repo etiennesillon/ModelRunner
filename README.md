@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
+<div id="top"></div>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stars][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<br/>
 
 <div align="center">
 
@@ -143,3 +153,23 @@
 </body>
 </html>
 
+[contributors-shield]: https://img.shields.io/github/contributors/EtienneSillon/ModelRunner?style=for-the-badge
+[contributors-url]: https://github.com/etiennesillon/ModelRunner/graphs/contributors
+
+[stars-shield]: https://img.shields.io/github/stars/etiennesillon/modelrunner?style=for-the-badge
+[stars-url]: https://github.com/etiennesillon/ModelRunner/network/stargazers
+
+[forks-shield]: https://img.shields.io/github/forks/etiennesillon/modelrunner?style=for-the-badge
+[forks-url]: https://github.com/etiennesillon/ModelRunner/network/members
+
+[issues-shield]: https://img.shields.io/github/issues/etiennesillon/ModelRunner?style=for-the-badge
+[issues-url]: https://github.com/etiennesillon/ModelRunner/issues
+
+[license-shield]: https://img.shields.io/github/license/etiennesillon/ModelRunner?style=for-the-badge
+[license-url]: https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/LICENSE.txt
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&style=for-the-badge
+[linkedin-url]: https://www.linkedin.com/in/etienne-sillon-4090aa6/
+
+
+[product-screenshot]: images/screenshot.png
