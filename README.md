@@ -27,11 +27,9 @@
   
   <h1 align="center">Demos</h1>
   
-<p>Here is a short video showcasing the voice interface:</p>
+<p>Here is a short video showcasing the voice interface: <a href="https://www.youtube.com/watch?v=vk_opCYf6kU">Voice Demo</a></p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vk_opCYf6kU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>This is a longer demo (too long for youtube!) showcasing more aspects of the platform including formulae, actions and workflows: <a href="https://www.dropbox.com/s/226iqv7os0bdxmq/Demo.mp4?dl=0">Demo</a>
+<p>This is a longer demo (too long for youtube!) showcasing more aspects of the platform including formulas, actions and workflows: <a href="https://www.dropbox.com/s/226iqv7os0bdxmq/Demo.mp4?dl=0">Demo</a>
   
 <p>Can't wait to get started? Check out the <a href="#gettingstarted">Getting Started section</a>
 
@@ -68,9 +66,9 @@
 <li>Aggregation</li>
 </ul>
 
-<p>The Back Reference Attribute type is a way of traversing a relationship backwards: if a Product data type has a Reference attribute called Type pointing to a Product-Type data type and if Product-Type has a Back Reference attribute called Products pointing back to the Type attribute, then the value of the Products attribute would be the list of Products pointing to this Product-Type. Attribute can also leverage Formulae which are evaluated at run time.</p>
+<p>The Back Reference Attribute type is a way of traversing a relationship backwards: if a Product data type has a Reference attribute called Type pointing to a Product-Type data type and if Product-Type has a Back Reference attribute called Products pointing back to the Type attribute, then the value of the Products attribute would be the list of Products pointing to this Product-Type. Attribute can also leverage Formulas which are evaluated at run time.</p>
 
-<p>Action artefacts can be added to the model to add custom GUI actions or run specific formulae when data is created or updated. They are particularly useful to kickoff a workflow process when a data object is created for example.</p>
+<p>Action artefacts can be added to the model to add custom GUI actions or run specific formulas when data is created or updated. They are particularly useful to kickoff a workflow process when a data object is created for example.</p>
 
 <p>The platform also includes an Administration information model with data types which are necessary for the platform’s operation, including Applications and Users. These system data types can be referenced from any information models to assign tasks or send notifications to users as part of workflow execution for example.</p>
 
