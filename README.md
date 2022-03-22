@@ -23,13 +23,15 @@
 
 </div>
 
-  <p>ModelRunner is a complete data management platform which acts as a layer of abstraction above structured databases and allows users to design and manage the information and workflows they need, regardless of their technical skills, by using an out-of-the-box application including Natural Language voice and text interfaces. Developers can leverage the platform functionality in their own web and mobile applications via Java and REST APIs.</p>
+  <p>ModelRunner is a complete data management platform which acts as a semantic layer above structured databases and allows users to design and manage the information and workflows they need, regardless of their technical skills, by using an out-of-the-box meta-application including a Natural Language voice interface. Developers can leverage the platform functionality in their own web and mobile applications via Java and REST APIs.</p>
   
   <h1 align="center">Demos</h1>
   
-<p>Here is a short video showcasing the voice interface: <a href="https://www.dropbox.com/s/f9v70eagurlz9tt/model%20demo%202%20-%20voice.mp4?dl=0">Voice demo</a></p> 
+<p>Here is a short video showcasing the voice interface:</p>
 
-<p>This is a longer demo showcasing more aspects of the platform including formulae, actions and workflows: <a href="https://www.dropbox.com/s/226iqv7os0bdxmq/Demo.mp4?dl=0">Demo</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vk_opCYf6kU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>This is a longer demo (too long for youtube!) showcasing more aspects of the platform including formulae, actions and workflows: <a href="https://www.dropbox.com/s/226iqv7os0bdxmq/Demo.mp4?dl=0">Demo</a>
   
 <p>Can't wait to get started? Check out the <a href="#gettingstarted">Getting Started section</a>
 
