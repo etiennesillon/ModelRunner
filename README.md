@@ -98,7 +98,7 @@
 
 <h2 id="nlu">The Natural Language interface engine</h2>
 
-<p>The natural language interface engine analyses every word in an utterance in the context of 1) an ontology built from the semantics in an information model and <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/IDCGlobalLexicon.txt">a simple lexicon</a> and 2) 3) the data in the underlying database(s). The engine supports requests like “please get me a list of all customers aged over 50 living in Melbourne”.</p>
+<p>The natural language interface engine analyses every word in an utterance in the context of 1) an ontology built from the semantics in an information model and <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/IDCGlobalLexicon.txt">a simple lexicon</a> and 2) the data in the underlying database(s). The engine supports requests like “please get me a list of all customers aged over 50 living in Melbourne”.</p>
 
 <h2 id="javaapi">The Java API</h2>
 
@@ -153,7 +153,9 @@
 
   <p>I use a Tomcat 7.0 server running on port 8080.</p>
 
-  <p>Once that’s done, everything should be ready to go! You can start with :</p>
+  <p>Almost forgot! You also need to make sure the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/IDCGlobalLexicon.txt">lexicon</a> is placed in Tomcat's conf directory.</p>
+
+  <p>I think that's it! Once that’s done, everything should be ready to go! You can start with :</p>
 
 <ul>
 <li>The application model editor: <a href="http://localhost:8080/ModelWebv4.0/appeditor.html">http://localhost:8080/ModelWebv4.0/appeditor.html</a></li><br>
