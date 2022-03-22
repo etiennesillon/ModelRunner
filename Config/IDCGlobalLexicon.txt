@@ -1,0 +1,24 @@
+Term, cost, price
+Term, last, duration
+Term, long, duration
+Term, year, duration~age
+Term, age, age
+Term, old, age
+Term, where, location
+Term, in, location~time
+Term, by, person
+Term, address, location
+Term, who, person
+Term, called, name
+Term, buy~buys~buying~bought, order
+Term, live~lives~living~lived, location
+Misc, and~or
+Misc, is~are~was~were
+Misc, all
+Misc, our
+Misc, dollar
+Misc, which
+Misc, a~the
+Misc, for
+Misc, of
+Misc, with
