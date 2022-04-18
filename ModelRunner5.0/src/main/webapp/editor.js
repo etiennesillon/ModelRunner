@@ -253,7 +253,7 @@ function postPublishItem(res) {
 function getNewRootItem() {
    if(editor == 0) {
       rootItem = new Application(-1, ["","","","","","","","","","","",""]);
-      var dbRef0 = new DbRef(getNextId(), rootItem, ["Default","","","","","","", "","","",DEFAULT_DBTYPE, "", DEFAULT_DBDRIVER, "false"], 15, 15, 70, 50);
+      var dbRef0 = new DbRef(getNextId(), rootItem, ["Default","","","","","","", "","","",DEFAULT_DBTYPE, "", DEFAULT_DBDRIVER, "false"], 15, 75, 70, 50);
       rootItem.addChild(DBREF, dbRef0);
    } else {
       rootItem = new Workflow();
@@ -1002,7 +1002,7 @@ function Shape(type, id, item, x, y, w, h) {
          ctx.font = HIGHLIGHT_FONT;
       }
 
-      drawRoundedRectangle(this.x - canvasLeft, this.y - canvasTop, this.width,  this.height, this.radius, true, true);
+      drawRoundedRectangle(this.x - canvasLeft - boxLeft, this.y - canvasTop - boxTop, this.width,  this.height, this.radius, true, true);
 
       ctx.fillStyle = SHAPE_TEXT_COLOURS[editor][this.type];
 
@@ -1024,7 +1024,7 @@ function Shape(type, id, item, x, y, w, h) {
          y = this.height / 2 + 5;
       }
 
-      ctx.fillText(label, this.x + x - canvasLeft, this.y + y - canvasTop);
+      ctx.fillText(label, this.x + x - canvasLeft - boxLeft, this.y + y - canvasTop - boxTop);
 
    };
 
@@ -1344,8 +1344,8 @@ function showPopupPanel(html, x, y) {
 function popupPanelShow(html) {
 
    popupPanel.innerHTML = html;
-   popupPanel.style.left = popupX + boxLeft + 'px';
-   popupPanel.style.top = popupY + boxTop + 'px';
+   popupPanel.style.left = popupX + 'px';
+   popupPanel.style.top = popupY + 'px';
    popupPanel.classList.add("popuppanel--active");
 
    isPopupPanelVisible = true;
