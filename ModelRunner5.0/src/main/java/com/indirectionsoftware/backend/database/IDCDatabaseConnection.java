@@ -82,7 +82,7 @@ public class IDCDatabaseConnection {
     			com.mysql.cj.jdbc.Driver Driver  = new com.mysql.cj.jdbc.Driver();
 
     			IDCUtils.info("Connecting to Database at URL = " + url);
-    			con = DriverManager.getConnection(url, "root", "25AvaAva09");
+    			con = DriverManager.getConnection(url, "mysql", "password");
 
     		} catch (Exception e) {
     			e.printStackTrace();
