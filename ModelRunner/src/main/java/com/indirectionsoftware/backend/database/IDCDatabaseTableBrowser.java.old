@@ -1,0 +1,130 @@
+package indirectionsoftware.idc.database;
+
+import indirectionsoftware.idc.metamodel.IDCType;
+import indirectionsoftware.idc.runtime.IDCExpressionEvaluator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IDCDatabaseTableBrowser {
+	
+	/**************************************************************************************************/
+	// Fields ...
+	/**************************************************************************************************/
+	
+	IDCType type;
+	
+	boolean isSortAscending;
+	
+	public static final int PAGE_SIZE=5;
+	
+	String filter;
+	
+	List<IDCDataRef> dataRefs;
+	
+	int nPage=0, maxPage=0;
+	
+	boolean reload=false;
+	
+	/**************************************************************************************************/
+	// Constructors ...
+	/**************************************************************************************************/
+	
+	public IDCDatabaseTableBrowser(IDCType type) {
+		
+		this.type = type;
+		
+	}
+
+	/**************************************************************************************************/
+	// Getters ...
+	/**************************************************************************************************/
+	
+	public int getPageSize() {
+		return PAGE_SIZE;
+	}
+
+	public int getPageNumber() {
+		return nPage;
+	}
+
+	public int getMaxPageNumber() {
+		return maxPage;
+	}
+
+	public IDCType getType() {
+		return type;
+	}
+
+	public String getFilter() {
+		return filter;
+	}
+
+	public void setFilter(String filter) {
+		this.filter = filter;
+	}
+
+	public void setReload(boolean reload) {
+		this.reload = reload;
+	}
+	
+	/**************************************************************************************************/
+	// Paging ...
+	/**************************************************************************************************/
+	
+	public List<IDCData> getPage() {
+		
+		List<IDCData> ret = new ArrayList<IDCData>(); 
+		
+		List<IDCDataRef> refs = getIds();
+
+		int lastSelectedRow = -1;
+		for(int nRow = nPage * PAGE_SIZE, selectedRows=0; nRow >=0 && nRow < refs.size() && selectedRows < PAGE_SIZE; nRow++) {
+			long id = refs.get(nRow).getItemId();
+			IDCData data = type.loadDataObject(id);
+			boolean isOk = true;
+			if(filter != null && filter.length() > 0) {
+				isOk = ((Boolean) data.evaluate(filter)).booleanValue();
+			}
+			if(isOk) {
+				lastSelectedRow = nRow;
+				selectedRows++;
+				ret.add(data);
+			}
+		}
+		
+		return ret;
+		
+	}
+
+	/**************************************************************************************************/
+	
+	public void setNextPage() {
+		nPage++;
+	}
+
+	/**************************************************************************************************/
+	
+	public void setPrevPage() {
+		nPage--;
+	}
+
+	/**************************************************************************************************/
+	
+	public List<IDCDataRef> getIds() { 
+		
+		if(dataRefs == null || reload || nPage==0) {
+			
+			String where = IDCExpressionEvaluator.getSQLFilter(type.getExplorerSQLFilter(), type);
+
+			dataRefs = type.loadAllDataReferences(null, where, type.getExplorerSQLOrderBy(), IDCType.NO_MAX_ROWS);
+			nPage=0;
+			maxPage = dataRefs.size() / PAGE_SIZE;
+			reload = false;
+		}
+		
+		return dataRefs;
+		
+	}
+
+}
