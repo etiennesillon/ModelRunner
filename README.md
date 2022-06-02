@@ -117,31 +117,33 @@
 <li><a href="#deploy">Deploy the platform</a></li>
 </ul>  
 
-<h2 id="database">Setting up the admin database</h2>
+<h2 id="database">Setting up the admin databases</h2>
+
+<h3 id="database-overview">Overview</h3>
+
+  <p>There are 2 administration databases to setup:
+  <ul>
+    <li>The main one is the Admin database which manages the users and their applications. It is defined in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/AdminRuntime.properties">this properties file</a> and comes with it's own application described in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/ModelAdmin.xml">this model</a>.</li>
+    <li>The SuperAdmin database is less important as it just manages registrations from modelrunner. It is defined in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/SuperAdminRuntime.properties">this properties file</a> and comes with a very simple application described in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/SuperAdmin.xml">this model</a>.</li>
+  </ul>  
 
 <h3 id="database-install">Installing the database server</h3>
 
   <p>You will need a database server with a JDBC driver, I use MySQL Community Server - GPL 8.0.19</p>
 
-<h3 id="database-properties">Update runtime.properties</h3>
+<h3 id="database-properties">Update runtime properties</h3>
 
-  <p>Update <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/runtime.properties">runtime.properties</a> to reflect your database, driver, URL etc</p>
+  <p>Update the properties file mentioned above to reflect your database, driver, URL etc.</p>
 
-<h3 id="database-schema">Create admin schema</h3>
+<h3 id="database-schema">Create admin schemas</h3>
 
-  <p>The default admin schema name is $$Admin but you can change that in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/runtime.properties">runtime.properties</a>. You will need to create the schema manually before continuing, I use MySQLWorkbench for this.</p>
+  <p>You will need to create both admin schemas manually. Their names are defined in the runtime properties files mentioned above.</p>
 
-<h3 id="database-init">Populate system tables in the admin schema</h3>
+<h3 id="database-init">Populate system tables in the admin schemas</h3>
 
-  <p>You now need to populate the systems table in the Admin schema as well as publish the MetaModel and the Admin application model.</p>
+  <p>Both databases can be setup by <a href="https://github.com/etiennesillon/ModelRunner/blob/main/src/main/java/com/indirectionsoftware/backend/database/IDCDbUtils.java">this class</a> with these parameters: "config Setup [db root user] [db root password] [new admin user] [new admin password]"</p>
 
 <p>Everything related to database management and data access is in the <a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database">database package</a>. Start with <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> which contains the code to setup the database.</p>
-
-<p>Just run the Init function in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> specifying the properties file, the MetaModel file and the Admin application model:</p>
-
-<p>Java IDCDBManager Init runtime.properties MetaModel.xml ModelAdmin.xml</p>
-
-<p>BTW, this won’t do anything as I’ve commented out the code not to destroy my installation by mistake :)</p>
 
 <p>FYI, the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/MetaModel.xml">MetaModel</a> contains the description of all artefacts that can be used in an application model, see <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/metamodel/IDCMetaModelParser.java">IDCMetaModelParser.java</a>. The Admin application is an out of the box application to manage everything from applications to users etc. More details <a href="#engine">here</a>.</p>
 
@@ -149,23 +151,13 @@
 
   <p>I use Eclipse IDE for Enterprise Java and Web Developers Version: 2021-12 (4.22.0) Build id: 20211202-1639</p>
 
-  <p><a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner5.0">ModelRunner5.0</a> is my complete Dynamic Web Project.</p>
+  <p><a href="https://github.com/etiennesillon/ModelRunner">ModelRunner</a> is my complete Dynamic Web Project.</p>
 
-  <p>I use a Tomcat 7.0 server running on port 8080.</p>
+  <p>I use a Tomcat 9.00.</p>
 
-  <p>Almost forgot! You also need to make sure the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/IDCGlobalLexicon.txt">lexicon</a> is placed in Tomcat's conf directory.</p>
-
-  <p>I think that's it! Once that’s done, everything should be ready to go! You can start with :</p>
-
-<ul>
-<li>The application model editor: <a href="http://localhost:8080/ModelWebv4.0/appeditor.html">http://localhost:8080/ModelWebv4.0/appeditor.html</a></li><br>
-<li>Once you have deployed your app, you can start using it here: <a href="http://localhost:8080/ModelWebv4.0/">http://localhost:8080/ModelWebv4.0/</a></li><br>
-<li>If you want to add workflows, you can use the workflow editor: <a href="http://localhost:8080/ModelWebv4.0/workfloweditor.html">http://localhost:8080/ModelWebv4.0/workfloweditor.html</a></li>
-</ul>  
+  <p>I think that's it! Once that’s done, everything should be ready to go! Just watch the demo videos on <a href="https://modelrunner.org">modelrunner.org</a> to get you started.</p>
 
   <p>Have fun and please give me some feedback in the <a href="https://github.com/etiennesillon/ModelRunner/discussions">Discussions</a> section!</p>
-
-
 
 </body>
 </html>
