@@ -124,7 +124,7 @@
   <p>There are 2 administration databases to setup:
   <ul>
     <li>The main one is the Admin database which manages the users and their applications. It is defined in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/AdminRuntime.properties">this properties file</a> and comes with it's own application described in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/ModelAdmin.xml">this model</a>.</li>
-    <li>The SuperAdmin database is less important as it just manages registrations from modelrunner. It is defined in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/SuperAdminRuntime.properties">this properties file</a> and comes with a very simple application described in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/SuperAdmin.xml">this model</a>.</li>
+    <li>The SuperAdmin database is less important as it just manages registrations from <a href="https://modelrunner.org">modelrunner.org</a>. It is defined in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/SuperAdminRuntime.properties">this properties file</a> and comes with a very simple application described in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/SuperAdmin.xml">this model</a>.</li>
   </ul>  
 
 <h3 id="database-install">Installing the database server</h3>
