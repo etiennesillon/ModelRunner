@@ -133,7 +133,7 @@
 
 <h3 id="database-properties">Update runtime properties</h3>
 
-  <p>Update the properties file mentioned above to reflect your database, driver, URL etc.</p>
+  <p>Update the properties files mentioned above to reflect your database, driver, URL etc.</p>
 
 <h3 id="database-schema">Create the admin schemas</h3>
 
@@ -143,9 +143,9 @@
 
   <p>Both databases can be setup by <a href="https://github.com/etiennesillon/ModelRunner/blob/main/src/main/java/com/indirectionsoftware/backend/database/IDCDbUtils.java">this class</a> with these parameters: "config Setup [db root user] [db root password] [new admin user] [new admin password]"</p>
 
-<p>Everything related to database management and data access is in the <a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database">database package</a>. Start with <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> which contains the code to setup the database.</p>
+<p>Everything related to database management and data access is in the <a href="https://github.com/etiennesillon/ModelRunner/tree/main/src/main/java/com/indirectionsoftware/backend/database">database package</a>. Start with <a href="https://github.com/etiennesillon/ModelRunner/blob/main/src/main/java/com/indirectionsoftware/backend/database/IDCDbUtils.java">IDCDbUtils</a> which sets up the database.</p>
 
-<p>FYI, the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/MetaModel.xml">MetaModel</a> contains the description of all artefacts that can be used in an application model, see <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/metamodel/IDCMetaModelParser.java">IDCMetaModelParser.java</a>. The Admin application is an out of the box application to manage everything from applications to users etc. More details <a href="#engine">here</a>.</p>
+<p>FYI, the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/MetaModel.xml">MetaModel</a> contains the description of all artefacts that can be used in an application model, see <a href="https://github.com/etiennesillon/ModelRunner/blob/main/src/main/java/com/indirectionsoftware/metamodel/IDCMetaModelParser.java">IDCMetaModelParser.java</a>. More details <a href="#engine">here</a>.</p>
 
 <h2 id="deploy">Deploy the platform</h2>
 
