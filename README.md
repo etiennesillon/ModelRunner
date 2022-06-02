@@ -18,7 +18,7 @@
   <h1 align="center">Data Management Platform</h1>  
 
   <a href="https://github.com/etiennesillon/ModelRunner">
-    <img src="images/logo.png" alt="Logo">
+    <img src="images/screenshot.png" alt="Logo">
   </a>
 
 </div>
@@ -27,9 +27,9 @@
   
   <h1 align="center">Demos</h1>
   
-<p>Here is a short video showcasing the voice interface: <a href="https://www.youtube.com/watch?v=vk_opCYf6kU">Voice Demo</a></p>
+<p>Here is a short introduction video showcasing the voice interface: <a href="https://www.youtube.com/watch?v=LH3EIRg-sfU">Voice Demo</a></p>
 
-<p>This is a longer demo (too long for youtube!) showcasing more aspects of the platform including formulas, actions and workflows: <a href="https://www.dropbox.com/s/226iqv7os0bdxmq/Demo.mp4?dl=0">Demo</a>
+<p>This is a longer demo introducing more aspects of the platform including formulas, actions and workflows: <a href="https://www.youtube.com/watch?v=AZqlKN2i9eM">Demo</a>
   
 <p>Can't wait to get started? Check out the <a href="#gettingstarted">Getting Started section</a>
 
@@ -113,7 +113,7 @@
 <p>This is just the first draft so please, bear with me as I’m trying to make this as easy as possible!</p>
 
 <ul>
-<li><a href="#database">Setting up the admin database</a></li>
+<li><a href="#database">Setting up the admin databases</a></li>
 <li><a href="#deploy">Deploy the platform</a></li>
 </ul>  
 
@@ -135,11 +135,11 @@
 
   <p>Update the properties file mentioned above to reflect your database, driver, URL etc.</p>
 
-<h3 id="database-schema">Create admin schemas</h3>
+<h3 id="database-schema">Create the admin schemas</h3>
 
   <p>You will need to create both admin schemas manually. Their names are defined in the runtime properties files mentioned above.</p>
 
-<h3 id="database-init">Populate system tables in the admin schemas</h3>
+<h3 id="database-init">Populate the system tables</h3>
 
   <p>Both databases can be setup by <a href="https://github.com/etiennesillon/ModelRunner/blob/main/src/main/java/com/indirectionsoftware/backend/database/IDCDbUtils.java">this class</a> with these parameters: "config Setup [db root user] [db root password] [new admin user] [new admin password]"</p>
 
@@ -153,11 +153,13 @@
 
   <p><a href="https://github.com/etiennesillon/ModelRunner">ModelRunner</a> is my complete Dynamic Web Project.</p>
 
-  <p>I use a Tomcat 9.00.</p>
+  <p>I use Tomcat 9.00.</p>
 
   <p>I think that's it! Once that’s done, everything should be ready to go! Just watch the demo videos on <a href="https://modelrunner.org">modelrunner.org</a> to get you started.</p>
 
-  <p>Have fun and please give me some feedback in the <a href="https://github.com/etiennesillon/ModelRunner/discussions">Discussions</a> section!</p>
+  <p>Have fun and please give me some feedback in the <a href="https://github.com/etiennesillon/ModelRunner/discussions">Discussions section</a> or on <a href="https://modelrunner.org">modelrunner.org</a>.</p>
+
+<p>And thanks for reading this :)</p>
 
 </body>
 </html>
