@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Runner</title>
+    <link rel="stylesheet" href="commonstyles.css">
+</head>
+<body>
+
+    <div id="fullDiv">
+    
+        <div id="header">
+        
+            <img id="logo" src="ModelRunnerSmall.png" alt="logo">
+            
+            <h1 id="title" >Model Runner - Application Login</h1>
+            
+            <ul id="menu">
+                <li id="menuli"><a id="menulia" href="index.html">Home</a></li>
+                <li id="menuli"><a id="menulia" href="contact.html">Contact</a></li>
+                <li id="menuli"><a id="menulia" href="appeditor.html">Models</a></li>
+                <li id="menuli"><a id="menulia" href="app.html">Apps</a></li>
+                <li id="menuli"><a id="menulia" href="workfloweditor.html">Workflows</a></li>
+            </ul>
+            
+        </div>
+        
+        <div id="body">
+        
+        	<p id="text">Please fill in the form below to login to your application:</p>
+        
+	        <form name="input" action="WebApp?action=0&role=1" method="post">
+	
+	            <table>
+	                <tr>
+	                    <td>
+	                        <label for="appl"><b>Application</b></label>
+	                    </td>
+	                    <td>
+	                        <input type="text" placeholder="Enter Application name" name="appl" required>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>
+	                        <label for="userid"><b>Username</b></label>
+	                    </td>
+	                    <td>
+	                        <input type="text" placeholder="Enter Username" name="userid" required>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>
+	                        <label for="passwd"><b>Password</b></label>
+	                    </td>
+	                    <td>
+	                        <input type="password" placeholder="Enter Password" name="passwd" required>
+	                    </td>
+	                </tr>
+	            </table>
+	
+	            <button id="text" type="submit">Login</button>
+	
+	        </form>
+            
+            <br>
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+

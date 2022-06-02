@@ -43,6 +43,7 @@
      <Attribute name="isTopLevelViewable" type="Attribute" default="true"/>
      <Attribute name="isTopLevelCreatable" type="Attribute" default="true"/>
      <Attribute name="explorerSQLFilter" type="Attribute"/>
+     <Attribute name="explorerFormulaFilter" type="Attribute"/>
      <Attribute name="explorerSQLOrderBy" type="Attribute"/>
      <Attribute name="Panels" type="Child" childType="Panel"/>
      <Attribute name="DatabaseRef" type="Child" childType="DatabaseRef"/>
@@ -168,6 +169,8 @@
      <Attribute name="type" type="Attribute"/>
      <Attribute name="url" type="Attribute"/>
      <Attribute name="driver" type="Attribute"/>
+     <Attribute name="user" type="Attribute"/>
+     <Attribute name="password" type="Attribute"/>
      <Attribute name="debug" type="Attribute" default="false"/>
     </Attributes>
    </Entity>

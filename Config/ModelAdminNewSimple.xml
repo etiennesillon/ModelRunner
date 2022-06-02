@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmi.id="-1" displayName="Admin" name="$$Admin" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" homePage="" helpPage="">
+    <Packages>
+        <Package xmi.id="1" displayName="System" name="$$System" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="-420" l.y="125" l.w="998" l.h="659">
+            <Types>
+                <Type xmi.id="2" displayName="Application" name="$$Application" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="-118" l.y="172" l.w="184" l.h="143">
+                    <Panels>
+                        <Panel xmi.id="3" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="-108" l.y="202" l.w="162" l.h="100">
+                            <Attributes>
+                                <Attribute xmi.id="4" displayName="Name" name="Name" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="-98" l.y="232" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="5" displayName="XML" name="XML" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="false" isDisplayEdit="false" isDisplaySearch="false" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="-98" l.y="262" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="11" displayName="User" name="$$User" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="185" l.y="437" l.w="369" l.h="252">
+                    <Panels>
+                        <Panel xmi.id="12" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="195" l.y="467" l.w="166" l.h="189">
+                            <Attributes>
+                                <Attribute xmi.id="13" displayName="Name" name="Name" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="205" l.y="497" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="15" displayName="Password" name="Password" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="false" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="205" l.y="527" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="16" displayName="Applications" name="Applications" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="205" l.y="557" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="2"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="17" displayName="__System_Extension__" name="__System_Extension__" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="17" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="205" l.y="587" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="18" displayName="__System_Reference__" name="__System_Reference__" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="204" l.y="618" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="19" displayName="Todo" name="Todo" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="374" l.y="468" l.w="159" l.h="108">
+                            <Attributes>
+                                <Attribute xmi.id="20" displayName="Tasks" name="Tasks" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="10" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="384" l.y="498" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="38"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="21" displayName="Requests" name="Requests" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="10" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="384" l.y="528" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="79"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="139" displayName="Account" name="$$Account" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerFormulaFilter="({UserRole} == 3) OR ({This} == {User}.{NSParent})" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="181" l.y="152" l.w="182" l.h="248">
+                    <Panels>
+                        <Panel xmi.id="140" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="191" l.y="182" l.w="160" l.h="200">
+                            <Attributes>
+                                <Attribute xmi.id="141" displayName="Name" name="Name" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="201" l.y="212" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="142" displayName="Applications" name="Applications" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="201" l.y="242" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="2"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="143" displayName="Users" name="Users" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="201" l.y="272" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="11"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="144" displayName="Teams" name="Teams" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="201" l.y="302" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="6" displayName="Admin Users" name="AdminUsers" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="15" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="201" l.y="332" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="11"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="154" displayName="Original User" name="OriginalUser" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="201" l.y="362" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="11"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="145" displayName="Application Role" name="$$ApplicationRole" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="-118" l.y="502" l.w="189" l.h="142">
+                    <Panels>
+                        <Panel xmi.id="146" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="-108" l.y="532" l.w="164" l.h="98">
+                            <Attributes>
+                                <Attribute xmi.id="147" displayName="Application" name="Application" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="-98" l.y="562" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="2"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="148" displayName="Role" name="Role" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="-98" l.y="592" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="149"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+            </Types>
+            <Domains>
+                <Domain xmi.id="149" displayName="Application Roles" name="$$ApplicationRoles" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="-276" l.y="530" l.w="123" l.h="126">
+                    <DomainValues>
+                        <DomainValue xmi.id="150" displayName="User" name="User" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="User" l.x="-266" l.y="560" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="151" displayName="Admin" name="Admin" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Admin" l.x="-266" l.y="590" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="152" displayName="Editor" name="Editor" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Editor" l.x="-266" l.y="620" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="155" displayName="SuperAdmin" name="SuperAdmin" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="SuperAdmin" l.x="-266" l.y="650" l.w="100" l.h="25"></DomainValue>
+                    </DomainValues>
+                </Domain>
+            </Domains>
+        </Package>
+        <Package xmi.id="22" displayName="Workflow" name="$$Workflow" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="599" l.y="-328" l.w="1373" l.h="1112">
+            <Types>
+                <Type xmi.id="23" displayName="Notification" name="$$Notification" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="Reference" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="627" l.y="70" l.w="200" l.h="250">
+                    <Panels>
+                        <Panel xmi.id="24" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="644" l.y="99" l.w="180" l.h="220">
+                            <Attributes>
+                                <Attribute xmi.id="25" displayName="Reference" name="Reference" isEnabled="false" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="&apos;Note#&apos; : {Format({NextId},6,&apos;0&apos;,&apos;Left&apos;)}" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="654" l.y="129" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="26" displayName="Status" name="Status" isEnabled="false" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="0" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="654" l.y="159" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="27"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="30" displayName="User" name="User" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="654" l.y="189" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="11"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="31" displayName="Title" name="Title" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="654" l.y="219" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="32" displayName="Text" name="Text" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="654" l.y="249" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="33" displayName="Task" name="$$Task" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="Reference" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="626" l.y="-235" l.w="375" l.h="281">
+                    <Panels>
+                        <Panel xmi.id="34" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="637" l.y="-203" l.w="164" l.h="244">
+                            <Attributes>
+                                <Attribute xmi.id="35" displayName="Reference" name="Reference" isEnabled="false" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="&apos;Task#&apos; : {Format({NextId},6,&apos;0&apos;,&apos;Left&apos;)}" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="-173" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="36" displayName="Title" name="Title" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="-143" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="37" displayName="Text" name="Text" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="-113" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="38" displayName="User" name="User" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="-83" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="11"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="44" displayName="Status" name="Status" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="-53" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="39"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="45" displayName="__System_Extension__" name="__System_Extension__" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="17" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="-23" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="46" displayName="__System_Reference__" name="__System_Reference__" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="647" l.y="7" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="47" displayName="History" name="History" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="822" l.y="-213" l.w="162" l.h="72">
+                            <Attributes>
+                                <Attribute xmi.id="48" displayName="History" name="History" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="832" l.y="-183" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                    <Actions>
+                        <Action xmi.id="49" displayName="Assign" name="Assign" isEnabled="(Status == 0) AND (User != {null})" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isMetaAction="false" isPreSave="false" isUpload="false" type="GUI" formula="Status = 1 | History += (&apos;Assigned to &apos; : User : &apos; on : {Now})" l.x="833" l.y="-121" l.w="70" l.h="40"></Action>
+                        <Action xmi.id="50" displayName="Accept" name="Accept" isEnabled="Status == 1" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isMetaAction="false" isPreSave="false" isUpload="false" type="GUI" formula="Status = 2 | History += (&apos;Accepted by &apos; : User : &apos; on : {Now})" l.x="831" l.y="-73" l.w="70" l.h="40"></Action>
+                        <Action xmi.id="51" displayName="Complete" name="Complete" isEnabled="Status == 2" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isMetaAction="false" isPreSave="false" isUpload="false" type="GUI" formula="Status = 3 | History += (&apos;Completed by &apos; : User : &apos; on : {Now})" l.x="833" l.y="-24" l.w="70" l.h="40"></Action>
+                    </Actions>
+                </Type>
+                <Type xmi.id="52" displayName="Workflow" name="$$Workflow" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1283" l.y="-246" l.w="189" l.h="246">
+                    <Panels>
+                        <Panel xmi.id="53" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1293" l.y="-216" l.w="160" l.h="200">
+                            <Attributes>
+                                <Attribute xmi.id="54" displayName="Name" name="Name" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1303" l.y="-186" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="55" displayName="Requirements" name="Requirements" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1303" l.y="-156" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="91"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="56" displayName="Context" name="Context" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1303" l.y="-126" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="91"></Reference>
+                                        <Reference xmi.id="-1" xmi.idref="128"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="57" displayName="Steps" name="Steps" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1303" l.y="-96" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="59"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="58" displayName="Instances" name="Instances" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="10" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1303" l.y="-66" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="110"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="59" displayName="WorkflowStep" name="$$WorkflowStep" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1294" l.y="29" l.w="181" l.h="333">
+                    <Panels>
+                        <Panel xmi.id="60" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1304" l.y="59" l.w="158" l.h="157">
+                            <Attributes>
+                                <Attribute xmi.id="61" displayName="Name" name="Name" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1314" l.y="89" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="62" displayName="Requirements" name="Requirements" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1314" l.y="119" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="91"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="63" displayName="Predecessors" name="Predecessors" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1314" l.y="149" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="68"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="64" displayName="Actions" name="Actions" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1314" l.y="179" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="120"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="137" displayName="Editor" name="Editor" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1302" l.y="226" l.w="163" l.h="121">
+                            <Attributes>
+                                <Attribute xmi.id="138" displayName="x" name="x" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1312" l.y="256" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="125" displayName="y" name="y" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1312" l.y="286" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="126" displayName="id" name="id" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1312" l.y="316" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="68" displayName="WorkflowStepPredecessor" name="$$WorkflowStepPredecessor" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1077" l.y="175" l.w="193" l.h="143">
+                    <Panels>
+                        <Panel xmi.id="69" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1087" l.y="205" l.w="165" l.h="100">
+                            <Attributes>
+                                <Attribute xmi.id="70" displayName="Steps" name="Steps" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="15" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1097" l.y="235" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="59"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="71" displayName="Type" name="Type" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1096" l.y="268" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="72"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="75" displayName="ApprovalRequest" name="$$ApprovalRequest" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="Reference" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="628" l.y="359" l.w="373" l.h="259">
+                    <Panels>
+                        <Panel xmi.id="76" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="638" l.y="389" l.w="160" l.h="210">
+                            <Attributes>
+                                <Attribute xmi.id="77" displayName="Reference" name="Reference" isEnabled="false" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="&apos;Req#&apos; : {Format({NextId},6,&apos;0&apos;,&apos;Left&apos;)}" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="648" l.y="419" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="78" displayName="Text" name="Text" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="648" l.y="449" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="79" displayName="User" name="User" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="648" l.y="479" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="11"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="80" displayName="Status" name="Status" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="0" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="648" l.y="509" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="81"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="85" displayName="__System_Extension__" name="__System_Extension__" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="17" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="648" l.y="539" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="86" displayName="__System_Reference__" name="__System_Reference__" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="648" l.y="569" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="87" displayName="History" name="History" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="815" l.y="391" l.w="161" l.h="70">
+                            <Attributes>
+                                <Attribute xmi.id="88" displayName="History" name="History" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="825" l.y="421" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                    <Actions>
+                        <Action xmi.id="89" displayName="Approve" name="Approve" isEnabled="Status == 0" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isMetaAction="false" isPreSave="false" isUpload="false" type="GUI" formula="Status = 1 | History += (&apos;Approved by &apos; : User : &apos; on : {Now})" l.x="814" l.y="472" l.w="70" l.h="40"></Action>
+                        <Action xmi.id="90" displayName="Reject" name="Reject" isEnabled="Status == 0" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isMetaAction="false" isPreSave="false" isUpload="false" type="GUI" formula="Status = 2 | History += (&apos;Rejected by &apos; : User : &apos; on : {Now})" l.x="814" l.y="524" l.w="70" l.h="40"></Action>
+                    </Actions>
+                </Type>
+                <Type xmi.id="91" displayName="KeyFormulaPair" name="$$KeyFormulaPair" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="Key" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1066" l.y="-195" l.w="192" l.h="363">
+                    <Panels>
+                        <Panel xmi.id="92" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1076" l.y="-165" l.w="160" l.h="200">
+                            <Attributes>
+                                <Attribute xmi.id="93" displayName="Key" name="Key" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1086" l.y="-135" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="94" displayName="Type Name" name="TypeName" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1086" l.y="-105" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="95" displayName="Formula" name="Formula" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1086" l.y="-75" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="96" displayName="Mandatory" name="Mandatory" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="2" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1086" l.y="-45" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="97" displayName="Message" name="Message" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1086" l.y="-15" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="98" displayName="Editor" name="Editor" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1075" l.y="40" l.w="163" l.h="121">
+                            <Attributes>
+                                <Attribute xmi.id="99" displayName="x" name="x" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1085" l.y="70" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="100" displayName="y" name="y" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1085" l.y="100" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="134" displayName="id" name="id" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1085" l.y="130" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="101" displayName="WorkflowInstance" name="$$WorkflowInstance" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="true" isTopLevelCreatable="true" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1506" l.y="-89" l.w="186" l.h="294">
+                    <Panels>
+                        <Panel xmi.id="102" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1516" l.y="-59" l.w="162" l.h="249">
+                            <Attributes>
+                                <Attribute xmi.id="103" displayName="Status" name="Status" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="-29" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="104"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="107" displayName="Started At" name="StartedAt" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="4" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="1" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="108" displayName="Completed At" name="CompletedAt" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="4" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="31" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="109" displayName="Elapsed Time" name="ElapsedTime" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="5" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="61" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="110" displayName="Workflow" name="Workflow" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="91" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="52"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="111" displayName="Steps" name="Steps" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="121" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="113"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="112" displayName="Context" name="Context" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="16" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1526" l.y="151" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="128"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="113" displayName="WorkflowStepInstance" name="$$WorkflowStepInstance" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1539" l.y="289" l.w="200" l.h="250">
+                    <Panels>
+                        <Panel xmi.id="114" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1549" l.y="319" l.w="160" l.h="200">
+                            <Attributes>
+                                <Attribute xmi.id="115" displayName="Status" name="Status" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="11" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1559" l.y="349" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="104"></Reference>
+                                    </References>
+                                </Attribute>
+                                <Attribute xmi.id="116" displayName="Started At" name="StartedAt" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="4" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1559" l.y="379" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="117" displayName="Comnpleted At" name="ComnpletedAt" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="4" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1559" l.y="409" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="118" displayName="Elasped Time" name="ElaspedTime" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="5" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1559" l.y="439" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="119" displayName="Step" name="Step" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="12" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1559" l.y="469" l.w="140" l.h="25">
+                                    <References>
+                                        <Reference xmi.id="-1" xmi.idref="59"></Reference>
+                                    </References>
+                                </Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="120" displayName="WorkflowAction" name="$$WorkflowAction" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1290" l.y="380" l.w="181" l.h="302">
+                    <Panels>
+                        <Panel xmi.id="121" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1300" l.y="410" l.w="159" l.h="127">
+                            <Attributes>
+                                <Attribute xmi.id="122" displayName="Name" name="Name" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1310" l.y="440" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="123" displayName="Object Formula" name="ObjectFormula" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1310" l.y="470" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="124" displayName="Action Formula" name="ActionFormula" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="9" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1310" l.y="500" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="7" displayName="Editor" name="Editor" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1298" l.y="548" l.w="163" l.h="121">
+                            <Attributes>
+                                <Attribute xmi.id="8" displayName="x" name="x" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1308" l.y="578" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="14" displayName="y" name="y" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1308" l.y="608" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="9" displayName="id" name="id" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1308" l.y="638" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+                <Type xmi.id="128" displayName="WorkflowContext" name="$$WorkflowContext" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" isTopLevelViewable="false" isTopLevelCreatable="false" explorerSQLFilter="" explorerSQLOrderBy="" NameFormula="" isUniqueKey="false" defaultListStylesheet="" defaultDetailsStylesheet="" defaultListPanel="" defaultDetailsPanel="" defaultEditDialog="" isDataEnabled="" extendsSystemType="" l.x="1704" l.y="-236" l.w="186" l.h="272">
+                    <Panels>
+                        <Panel xmi.id="129" displayName="Main" name="Main" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1714" l.y="-206" l.w="165" l.h="98">
+                            <Attributes>
+                                <Attribute xmi.id="130" displayName="Key" name="Key" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1724" l.y="-176" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="131" displayName="Reference" name="Reference" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="0" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1724" l.y="-146" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                        <Panel xmi.id="135" displayName="Editor" name="Editor" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1715" l.y="-100" l.w="163" l.h="121">
+                            <Attributes>
+                                <Attribute xmi.id="66" displayName="x" name="x" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1725" l.y="-70" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="65" displayName="y" name="y" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1725" l.y="-40" l.w="140" l.h="25"></Attribute>
+                                <Attribute xmi.id="136" displayName="id" name="id" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" type="1" desc="" length="" isMandatory="false" isKey="false" isDisplayList="true" isDisplayEdit="true" isDisplaySearch="true" initialValue="" formula="" refFormula="" refListFormula="" constraintFormula="" constraintMessage="" __Referenced_System_Type__="" l.x="1725" l.y="-10" l.w="140" l.h="25"></Attribute>
+                            </Attributes>
+                        </Panel>
+                    </Panels>
+                </Type>
+            </Types>
+            <Domains>
+                <Domain xmi.id="27" displayName="$$NotificationStatus" name="$$NotificationStatus" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="844" l.y="73" l.w="120" l.h="125">
+                    <DomainValues>
+                        <DomainValue xmi.id="28" displayName="Unread" name="Unread" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Unread" l.x="854" l.y="103" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="29" displayName="Read" name="Read" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Read" l.x="854" l.y="133" l.w="100" l.h="25"></DomainValue>
+                    </DomainValues>
+                </Domain>
+                <Domain xmi.id="39" displayName="$$TaskStatus" name="$$TaskStatus" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="455" l.y="-231" l.w="128" l.h="157">
+                    <DomainValues>
+                        <DomainValue xmi.id="40" displayName="New" name="New" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="New" l.x="465" l.y="-201" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="41" displayName="Assigned" name="Assigned" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Assigned" l.x="465" l.y="-171" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="42" displayName="Accepted" name="Accepted" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Accepted" l.x="465" l.y="-141" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="43" displayName="Completed" name="Completed" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Completed" l.x="465" l.y="-111" l.w="100" l.h="25"></DomainValue>
+                    </DomainValues>
+                </Domain>
+                <Domain xmi.id="72" displayName="$$WorkflowStepPredecessorType" name="$$WorkflowStepPredecessorType" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1080" l.y="343" l.w="120" l.h="97">
+                    <DomainValues>
+                        <DomainValue xmi.id="73" displayName="AND" name="AND" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="AND" l.x="1090" l.y="373" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="74" displayName="OR" name="OR" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="OR" l.x="1090" l.y="403" l.w="100" l.h="25"></DomainValue>
+                    </DomainValues>
+                </Domain>
+                <Domain xmi.id="81" displayName="$$ApprovalRequestStatus" name="$$ApprovalRequestStatus" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="896" l.y="572" l.w="120" l.h="125">
+                    <DomainValues>
+                        <DomainValue xmi.id="82" displayName="Pending" name="Pending" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Pending" l.x="906" l.y="602" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="83" displayName="Approved" name="Approved" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Approved" l.x="906" l.y="632" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="84" displayName="Rejected" name="Rejected" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Rejected" l.x="906" l.y="662" l.w="100" l.h="25"></DomainValue>
+                    </DomainValues>
+                </Domain>
+                <Domain xmi.id="104" displayName="$$WorkflowInstanceStatus" name="$$WorkflowInstanceStatus" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" l.x="1764" l.y="115" l.w="120" l.h="125">
+                    <DomainValues>
+                        <DomainValue xmi.id="105" displayName="Paused" name="Paused" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Paused" l.x="1774" l.y="145" l.w="100" l.h="25"></DomainValue>
+                        <DomainValue xmi.id="106" displayName="Running" name="Running" isEnabled="true" isViewable="" treeIcon="" panelIcon="" description="" ContactDetails="" maxTestObjects="" concepts="" key="Running" l.x="1774" l.y="175" l.w="100" l.h="25"></DomainValue>
+                    </DomainValues>
+                </Domain>
+            </Domains>
+        </Package>
+    </Packages>
+</Application>

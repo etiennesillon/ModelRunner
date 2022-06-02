@@ -135,21 +135,21 @@
 
   <p>You now need to populate the systems table in the Admin schema as well as publish the MetaModel and the Admin application model.</p>
 
-<p>Everything related to database management and data access is in the <a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner/src/main/java/com/indirectionsoftware/backend/database">database package</a>. Start with <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> which contains the code to setup the database.</p>
+<p>Everything related to database management and data access is in the <a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database">database package</a>. Start with <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> which contains the code to setup the database.</p>
 
-<p>Just run the Init function in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> specifying the properties file, the MetaModel file and the Admin application model:</p>
+<p>Just run the Init function in <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/backend/database/IDCDbManager.java">IDCDbManager</a> specifying the properties file, the MetaModel file and the Admin application model:</p>
 
 <p>Java IDCDBManager Init runtime.properties MetaModel.xml ModelAdmin.xml</p>
 
 <p>BTW, this won’t do anything as I’ve commented out the code not to destroy my installation by mistake :)</p>
 
-<p>FYI, the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/MetaModel.xml">MetaModel</a> contains the description of all artefacts that can be used in an application model, see <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner/src/main/java/com/indirectionsoftware/metamodel/IDCMetaModelParser.java">IDCMetaModelParser.java</a>. The Admin application is an out of the box application to manage everything from applications to users etc. More details <a href="#engine">here</a>.</p>
+<p>FYI, the <a href="https://github.com/etiennesillon/ModelRunner/blob/main/Config/MetaModel.xml">MetaModel</a> contains the description of all artefacts that can be used in an application model, see <a href="https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/src/main/java/com/indirectionsoftware/metamodel/IDCMetaModelParser.java">IDCMetaModelParser.java</a>. The Admin application is an out of the box application to manage everything from applications to users etc. More details <a href="#engine">here</a>.</p>
 
 <h2 id="deploy">Deploy the platform</h2>
 
   <p>I use Eclipse IDE for Enterprise Java and Web Developers Version: 2021-12 (4.22.0) Build id: 20211202-1639</p>
 
-  <p><a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner">ModelRunner</a> is my complete Dynamic Web Project.</p>
+  <p><a href="https://github.com/etiennesillon/ModelRunner/tree/main/ModelRunner5.0">ModelRunner5.0</a> is my complete Dynamic Web Project.</p>
 
   <p>I use a Tomcat 7.0 server running on port 8080.</p>
 
@@ -183,7 +183,7 @@
 [issues-url]: https://github.com/etiennesillon/ModelRunner/issues
 
 [license-shield]: https://img.shields.io/github/license/etiennesillon/ModelRunner?style=for-the-badge
-[license-url]: https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner/LICENSE.txt
+[license-url]: https://github.com/etiennesillon/ModelRunner/blob/main/ModelRunner5.0/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&style=for-the-badge
 [linkedin-url]: https://www.linkedin.com/in/etienne-sillon-4090aa6/
