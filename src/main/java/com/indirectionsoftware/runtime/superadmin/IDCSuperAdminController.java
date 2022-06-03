@@ -258,7 +258,7 @@ public class IDCSuperAdminController extends IDCController {
 		} else {
 			sendError(out, "Missing mandatory fields");
 		}
-    	
+
 	}
 	
 	/****************************************************************************
@@ -267,7 +267,11 @@ public class IDCSuperAdminController extends IDCController {
 	
 	private void list(HttpServletRequest request, PrintWriter out) {
 		
-		sendHTML(out, superAdminApp.getAllRegistrationsHTML());
+		if(IDCUtils.isDebugMode()) {
+			sendHTML(out, superAdminApp.getAllRegistrationsHTML());
+		} else {
+			sendError(out, "Sorry, only available in debug mode.");
+		}
     	
 	}
 	
