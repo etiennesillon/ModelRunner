@@ -155,11 +155,9 @@
 
   <p>I use Tomcat 9.00.</p>
 
-  <p>I think that's it! Once that’s done, everything should be ready to go! Just watch the demo videos on <a href="https://modelrunner.org">modelrunner.org</a> to get you started.</p>
+  <p>I think that's it! Once that’s done, everything should be ready to go!</p>
 
-  <p>Have fun and please give me some feedback in the <a href="https://github.com/etiennesillon/ModelRunner/discussions">Discussions section</a> or on <a href="https://modelrunner.org">modelrunner.org</a>.</p>
-
-<p>And thanks for reading this :)</p>
+<p>Thanks for reading this :)</p>
 
 </body>
 </html>
